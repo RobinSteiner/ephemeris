@@ -4,7 +4,6 @@ import {HttpClient, HttpParams} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Card} from './card';
 
-// we can now access environment.apiUrl
 const API_URL = environment.apiUrl;
 
 @Injectable({

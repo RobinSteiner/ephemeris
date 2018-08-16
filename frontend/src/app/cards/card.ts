@@ -2,6 +2,9 @@ export class Card {
   id: number;
   date: Date;
   order: number;
+  rows: number;
+  cols: number;
+  type: string;
 }
 
 enum Theme { Lite, Dark }

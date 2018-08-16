@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*
 import java.math.BigInteger
 import java.util.*
 
+
+@CrossOrigin(origins = ["http://localhost:4200"])
 @RestController("/card")
 class CardController(@Autowired private val cardRepository: CardRepository) {
 
@@ -29,6 +31,5 @@ class CardController(@Autowired private val cardRepository: CardRepository) {
         updatedCard.id = id
         cardRepository.save(updatedCard)
     }
-
 
 }

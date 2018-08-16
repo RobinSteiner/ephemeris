@@ -21,4 +21,11 @@ export class CardsComponent implements OnInit {
     });
   }
 
+  update(date: Date) {
+    this.cardsService.getCards(date).subscribe((cards) => {
+      this.cards = cards;
+      console.log(cards);
+    });
+  }
+
 }

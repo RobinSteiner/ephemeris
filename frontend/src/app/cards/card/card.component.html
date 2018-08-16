@@ -1,5 +1,2 @@
-<app-text-card *ngIf="isTextCard()"></app-text-card>
-<app-text-card *ngIf="isTextCard()"></app-text-card>
-<app-text-card *ngIf="isTextCard()"></app-text-card>
-<app-text-card *ngIf="isTextCard()"></app-text-card>
-<app-text-card *ngIf="isTextCard()"></app-text-card>
+<app-text-card [card]="card" *ngIf="isTextCard()"></app-text-card>
+<app-image-card [card]="card" *ngIf="isImageCard()"></app-image-card>

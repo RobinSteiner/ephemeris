@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
   }
 
   isTextCard(): boolean {
-    return (this.card instanceof TextCard);
+    return (this.card.type === 'text_card');
   }
 
   isMusicCard(): boolean {
@@ -24,7 +24,7 @@ export class CardComponent implements OnInit {
   }
 
   isImageCard(): boolean {
-    return (this.card instanceof ImageCard);
+    return (this.card.type === 'image_card');
   }
 
 }
